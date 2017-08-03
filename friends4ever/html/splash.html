@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>4Life</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="../css/splash.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+ 	<img src="../images/longLogo.png" height="200" width="700" id="logo">
+
+ 	<div id="center">
+ 		<p>thanks for signing up!</p>
+ 		<img src="../images/heart.png" height="300" width="300" id="heart">
+ 	</div>
+
+ 	<p><a href="http://theforge.me/friends4ever/">Back To Site</a><p>
+ 	<script type="text/javascript">
+
+ 	$(document).ready(function(){
+ 		function getURLParameter(sParam){
+
+			var sPageURL = window.location.search.substring(1),
+				URLVariables = sPageURL.split('&');
+
+			for (var i = 0; i < URLVariables.length; i++){
+				var sParameterName = URLVariables[i].split('=');
+
+				if (sParameterName[0] == sParam){
+
+				return sParameterName[1];
+
+				}
+
+			}
+		}
+
+		var code = getURLParameter("code");
+
+		$.ajax({
+			method : "POST",
+			url : "http://theforge.me/friends4ever/includes/post/postNewInsta.php",
+			data : { code },
+			success : function(input){
+				console.log(input);
+			}
+		})		
+ 	})
+
+
+ 	</script>
+</body>
+</html>

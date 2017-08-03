@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#66ccff, white);
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+#logo {
+	display: block;
+    margin: auto;
+    width:100%;
+}
+
+#heart {
+	display:block;
+	margin:auto;
+}
+
+p {
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	font-size: 30px;
+	color:white;
+    text-shadow: 3px 2px #1D3A67;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}

@@ -1,0 +1,223 @@
+/* ----- LOGIN PAGE STYLING -----*/
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#66ccff, white);
+}
+p {
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Comfortaa', cursive;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+#logo {
+	display: block;
+    margin: auto;
+    width:100%;
+    margin-bottom: 5em;
+}
+
+#login {
+	margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+input, button{
+	display: block;
+    margin: 0 auto;
+    text-align:center;
+    color: #A7BBC0;
+    font-family: 'Comfortaa', cursive;
+
+    width:50%;
+}
+
+#login > p {
+  margin-bottom: 1em;
+	text-align: center;
+  font-size: 300%;
+	font-family: 'Comfortaa', cursive;
+}
+
+input {
+	border: 1px solid #A7BBC0;
+  margin-bottom:1em;
+    border-radius: 10px;
+    background: white !important;
+    height:90px;
+    font-size:300%;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #999;
+}
+
+button {
+	color:black;
+	border: 1px solid #A7BBC0;
+	background: white;
+	border-radius: 5px;
+    font-size:140%;
+    height: 100px;
+    width: 250px;
+    cursor: pointer;
+}
+
+label {
+	display: inline-block;
+    float: left;
+}
+
+#signUpInput > button {
+	margin-top: 15px;
+}
+
+/*-----LOADER STYLING -----*/
+.loader {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  color: #ffffff;
+  font-size: 20px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+/*--------- HOME PAGE STYLING -------*/
+#homeMain > div > img{
+  text-align:center;
+display:block;
+margin:auto;
+border-radius:100px  ;
+}
+#homeMain > div > button{
+  margin-bottom: 3em;
+  border-radius:100px;
+  width: 100px;
+  padding:0px;
+
+}
+#homeMain > div > p {
+  margin-top:0.1em;
+  margin-bottom:0.1em;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Comfortaa', cursive;
+}
+#header > img {
+	width: 100%;
+  height: 10em;
+}
+
+#header > ul {
+	position: absolute;
+    right: -0.000000001em;
+    padding-right:0;
+    top: 1.7em;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    color: #046296;
+    margin-right: 0;
+}
+#header > ul > li{
+  display: inline;    
+}
+#header > ul >li:hover{
+	background: linear-gradient(to right, #66ccff, white);
+	cursor: pointer;
+}
+
+/*------REFERAL PAGE------*/
+#referal p{
+    color: #2076A8;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+#theLink {
+  background: white;
+  padding: 10px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #2076A8;
+}
+
+#referal > button {
+  font-weight: bold;
+  background: #2076A8;
+  border: 2px solid white;
+  width: 10%;
+  height: 15%;
+  font-size: 20px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}

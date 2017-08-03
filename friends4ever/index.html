@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Friends4Ever</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+	<script type="text/javascript" src="js/client.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+
+	<div class="loader">Loading...</div>
+
+	<div id="login" style="display: none;">
+		<img src="images/logo.png" height="200" width="700" id="logo">
+		<p>Welcome back!</p>
+		<input type="text" id="username"><br>
+		<input type="password" id='password'><br>
+		<button id="logSubmit">Log In</button><br>
+
+		<button id="signUp">Sign Up</button>
+
+		<div id="signUpInput" style="display: none;">
+			<p for="email">email</p>
+			<input type="text" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'email'">
+
+			<p for="password">password</p>
+			<input type="password" id="signPassword" onfocus="this.placeholder = ''">
+
+			<button id="confirm" style="display:none;">Confirm</button>
+		</div>
+	</div>
+
+	<div id="mainPage" style="display: none;">
+		<img src="">	
+
+		<div id="header">
+			<img src="images/longLogo.png">
+			<ul>
+				<li>HOME</li>
+				<li>|</li>
+				<li id="referalLink">REFFERAL</li>
+				<li>|</li>
+				<li id='logout'>LOGOUT</li>
+			</ul>
+		</div>
+
+		<div id="homeMain">
+			
+		</div>
+
+	</div>
+
+	<div id="referal" style="display: none;">
+		<p>Referal Link</p>
+		<p id="theLink"></p>
+		<p>lorem ipsum</p>
+		<button></button>
+		<p>Tap To Collect</p>
+	</div>
+
+
+
+	<script>
+		//google analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-90727168-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

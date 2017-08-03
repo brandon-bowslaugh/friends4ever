@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Friends4Ever</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+	<div style="margin-top: 10%;">
+		<input type="text" id="username">
+		<input type="password" id="password">
+		<button>Add Intsagram</button>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#username").val("")
+		$("#password").val("")
+
+		$("body > div > button").click(function(){
+			$.ajax({
+				method : "POST",
+				url : "http://theforge.me/friends4ever/includes/post/postTemp.php",
+				data : {username : $("#username").val(), password : $("#password").val()},
+				success : function(input){
+					console.log(input);
+					if(input != "TEMP" || input != "FAILED"){
+						$.ajax({
+							method : "POST",
+							url : "http://theforge.me:4001",
+							data : {username : $("#username").val(), password : $("#password").val()},
+							success : function(input){
+								console.log(input);
+							}
+						})
+					}
+				}
+			})
+		})
+		/*$("body").on("click", "body > div > button", function(){
+			$.ajax({
+				method : "POST",
+				url : "http://theforge.me/friends4ever/includes/post/postTemp.php",
+				data : {username : $("#username").val(), password : $("#password").val()},
+				success : function(input){
+					console.log(input);
+				}
+			})
+			console.log("htllo plzs")
+		})*/
+	})
+	</script>
+</body>
+</html>

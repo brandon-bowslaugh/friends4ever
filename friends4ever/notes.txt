@@ -1,0 +1,3 @@
+unfollow all
+delete all posts
+auto delete posts
