@@ -251,7 +251,6 @@ $fh = fsockopen ('ssl://www.paypal.com', 443, $errno, $errstr, 30);
 file_put_contents('theurl.txt', $header . $req);
 if(!$fh){
 	// lost communication with our web server, and cant reach paypal
-	file_put_contents('fh.txt', 'fuck');
 	exit();
 	/*
 
@@ -372,9 +371,7 @@ if(!$fh){
                         $date = date('Y-m-d H:i:s', strtotime("+30 days"));
                         $sql = "UPDATE subscription SET paid_until='$date' WHERE account_id = $userID";
                         $query = mysqli_query($conn, $sql);
-                    } else {
-                        file_put_contents('brandon.txt', 'brandon fucked up');
-                    }
+                    } 
                 }
 
             
@@ -468,7 +465,6 @@ if(!$fh){
 				//file_put_contents('paypalData.txt', $fullText);
 				
 			//} //else if ($strcmp($res, 'INVALID') == 0){
-				//file_put_contents('wefuckedup.txt', 'fuck');
 		//}
 	
 	
